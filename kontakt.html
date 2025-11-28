@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | Ackermann Immobilien GmbH</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar header-row">
+      <div class="logo" aria-label="Ackermann Immobilien GmbH">
+        <div class="logo-icon">A</div>
+        <div>
+          <div>Ackermann Immobilien GmbH</div>
+          <small style="color:#5a6b7b">Exklusive Immobilien in München</small>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Menü öffnen">☰</button>
+    </div>
+    <nav>
+      <ul class="nav-links open">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a class="active" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section hero-small">
+      <div class="hero-content">
+        <span class="badge">Kontakt</span>
+        <h1>Wir freuen uns auf Ihre Anfrage.</h1>
+        <p>Sie erreichen uns telefonisch, per E-Mail oder über das Kontaktformular. Wir melden uns zeitnah mit einer konkreten Rückmeldung.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="two-col">
+        <div>
+          <h2>Anschrift & Kontakt</h2>
+          <p class="address">Ackermann Immobilien GmbH
+Garmischer Str. 7
+80339 München</p>
+          <p>Telefon: +49 (0)89 2154 760-0<br>
+          E-Mail: <a href="mailto:info@ackermann-immobilien-gmbh.de">info@ackermann-immobilien-gmbh.de</a></p>
+          <div class="map-placeholder" aria-hidden="true">
+            Kartenansicht (Platzhalter)
+          </div>
+        </div>
+        <div>
+          <h2>Kontaktformular</h2>
+          <p class="caption">* Pflichtfelder – die technische Anbindung an ein Backend muss noch ergänzt werden.</p>
+          <form class="contact-form" novalidate>
+            <label for="name">Name *</label>
+            <input id="name" name="name" type="text" required placeholder="Ihr Name">
+
+            <label for="email">E-Mail *</label>
+            <input id="email" name="email" type="email" required placeholder="beispiel@domain.de">
+
+            <label for="phone">Telefonnummer (optional)</label>
+            <input id="phone" name="phone" type="tel" pattern="[0-9+ ()-]{6,}" placeholder="+49 ...">
+
+            <label for="subject">Betreff *</label>
+            <input id="subject" name="subject" type="text" required placeholder="Ihr Anliegen">
+
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" required placeholder="Ihre Nachricht"></textarea>
+
+            <label style="display:flex; gap:10px; align-items:flex-start;">
+              <input type="checkbox" required>
+              <span>Ich habe die Datenschutzerklärung gelesen und akzeptiere sie.</span>
+            </label>
+
+            <button type="submit">Nachricht senden</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <strong>Ackermann Immobilien GmbH</strong><br>
+          <div class="address">Garmischer Str. 7
+80339 München</div>
+        </div>
+        <div>
+          Telefon: +49 (0)89 2154 760-0<br>
+          E-Mail: <a href="mailto:info@ackermann-immobilien-gmbh.de">info@ackermann-immobilien-gmbh.de</a>
+        </div>
+        <div>
+          <a href="impressum.html">Impressum</a><br>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <small>Diese Website verwendet keine Tracking-Tools. Technisch notwendige Funktionen können Cookies nutzen.</small>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
